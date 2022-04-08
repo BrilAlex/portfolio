@@ -1,0 +1,29 @@
+.footer {
+    background: dimgrey;
+}
+
+.container {
+    padding-bottom: 15px;
+}
+
+.socialContactsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto 20px auto;
+    border: 1px solid black;
+}
+
+.socialContact {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: lightgray;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    background: lightgray;
+}

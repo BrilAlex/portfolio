@@ -1,0 +1,9 @@
+.contacts {
+    background: ghostwhite;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    background: cornsilk;
+}

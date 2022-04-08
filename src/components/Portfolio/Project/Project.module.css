@@ -1,0 +1,33 @@
+.project {
+    width: 300px;
+    margin-bottom: 15px;
+    background: darkgray;
+}
+
+.preViewImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.detailsLink {
+    padding: 5px 15px;
+    background: lightgray;
+    color: black;
+    text-decoration: none;
+}
+
+.info {
+    padding: 10px;
+    background: ghostwhite;
+}
+
+.title {
+    margin: 5px 0;
+    background: lightgray;
+}
+
+.description {
+    background: lightgray;
+}
