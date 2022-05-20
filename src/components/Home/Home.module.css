@@ -40,11 +40,13 @@
   margin: 0 10px;
   background: lightgray;
   text-align: center;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
 
 .mainPhoto img {
   width: 100%;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 858px) {

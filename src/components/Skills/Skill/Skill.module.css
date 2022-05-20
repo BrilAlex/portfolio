@@ -14,9 +14,31 @@
 
 .icon {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: dimgrey;
+  width: 76px;
+  height: 76px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.html5 {
+  background-image: url("../../../assets/icons/icon-html5.svg");
+}
+
+.css3 {
+  background-image: url("../../../assets/icons/icon-css3.svg");
+}
+
+.js {
+  background-image: url("../../../assets/icons/icon-js.svg");
+}
+
+.react {
+  background-image: url("../../../assets/icons/icon-react.svg");
+}
+
+.redux {
+  background-image: url("../../../assets/icons/icon-redux.svg");
 }
 
 .skillContent h3 {
@@ -25,7 +47,7 @@
   font-weight: 600;
 }
 
-.skillContent p {
+.skillContent .description {
   font-size: 15px;
   line-height: 1.8em;
   color: #797979;

@@ -1,5 +1,6 @@
 import commonStyles from "../../common/styles/CommonStyles.module.css";
 import styles from "./Home.module.css";
+import photo from "../../assets/images/photo.jpg";
 
 export const Home = () => {
   return (
@@ -11,7 +12,7 @@ export const Home = () => {
           <p>A front-end developer.</p>
         </div>
         <div className={styles.mainPhoto}>
-          <img src={""} alt={"Alex Brilevski"}/>
+          <img src={photo} alt={"Alex Brilevski"}/>
         </div>
       </div>
     </div>
