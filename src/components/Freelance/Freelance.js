@@ -1,5 +1,6 @@
 import commonStyles from "../../common/styles/CommonStyles.module.css";
 import styles from "./Freelance.module.css";
+import {Button} from "../../common/components/Button/Button";
 
 export const Freelance = () => {
   return (
@@ -8,7 +9,7 @@ export const Freelance = () => {
         <div>
           <h2>I am opened for remote work proposals</h2>
         </div>
-        <button className={`${commonStyles.button} ${commonStyles.outlined}`}>Hire Me!</button>
+        <Button text={"Hire Me!"} outlined={true}/>
       </div>
     </div>
   );
