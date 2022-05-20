@@ -1,0 +1,11 @@
+.freelance {
+    background-image: url("../../assets/images/freelance-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.freelance h2 {
+    margin-bottom: 24px;
+}

@@ -1,19 +1,48 @@
-import commonStyles from "./../../assets/css/CommonStyles.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.css";
 import styles from "./Portfolio.module.css";
 import {Project} from "./Project/Project";
+import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
+import todoListImage from "../../assets/images/todolist.jpg";
+import socialNetImage from "../../assets/images/social-net.jpg";
+import counter from "../../assets/images/counter.jpg";
+import studyCards from "../../assets/images/study-cards.jpg";
 
 export const Portfolio = () => {
   const projects = [
-    {id: 1, title: "Project 1", preViewImage: "", gitHubPagesURL: "", description: "Project 1 description"},
-    {id: 2, title: "Project 2", preViewImage: "", gitHubPagesURL: "", description: "Project 2 description"},
+    {
+      id: 1,
+      title: "To-do list",
+      preViewImage: todoListImage,
+      gitHubPagesURL: "",
+      description: "Project TodoList description"
+    },
+    {
+      id: 2,
+      title: "Social network",
+      preViewImage: socialNetImage,
+      gitHubPagesURL: "",
+      description: "Project SocialNet description"
+    },
+    {
+      id: 3,
+      title: "Counter",
+      preViewImage: counter,
+      gitHubPagesURL: "",
+      description: "Project Counter description"
+    },
+    {
+      id: 4,
+      title: "Friday project",
+      preViewImage: studyCards,
+      gitHubPagesURL: "",
+      description: "Project Study cards description"
+    },
   ];
 
   return (
-    <div className={styles.portfolio}>
+    <div className={commonStyles.section}>
       <div className={`${commonStyles.container}`}>
-        <div className={commonStyles.blockTitle}>
-          <h2>Portfolio</h2>
-        </div>
+        <SectionTitle title={"Portfolio"}/>
         <div className={styles.projectsList}>
           {
             projects.map(p =>

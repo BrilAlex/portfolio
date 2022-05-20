@@ -1,0 +1,59 @@
+.home {
+  background-image: url("../../assets/images/home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.greetingText {
+  margin: 0 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.greetingText h5 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.greetingText h1 {
+  margin: 10px 0 20px;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.greetingText p {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.mainPhoto {
+  width: 270px;
+  height: 270px;
+  margin: 0 10px;
+  background: lightgray;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.mainPhoto img {
+  width: 100%;
+}
+
+@media screen and (max-width: 858px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .mainPhoto {
+    margin-bottom: 40px;
+  }
+}

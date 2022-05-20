@@ -7,13 +7,15 @@ export const Skill = (props) => {
 
   return (
     <div className={styles.skill}>
-      <div className={iconStyle}/>
-      <div className={styles.title}>
-        <h3>{title}</h3>
+      <div className={styles.iconBox}>
+        <div className={iconStyle}/>
       </div>
-      <p className={styles.description}>
-        {description}
-      </p>
+      <div className={styles.skillContent}>
+        <h3>{title}</h3>
+        <p className={styles.description}>
+          {description}
+        </p>
+      </div>
     </div>
   );
 };

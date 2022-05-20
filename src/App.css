@@ -1,16 +1,53 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    background: transparent;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/Montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('assets/fonts/Nunito.ttf');
 }
 
 /* App styles */
 .App {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
 }

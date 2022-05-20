@@ -1,9 +1,9 @@
 import './App.css';
 import {Header} from "./components/Header/Header";
-import {MainBanner} from "./components/MainBanner/MainBanner";
+import {Home} from "./components/Home/Home";
 import {Skills} from "./components/Skills/Skills";
 import {Portfolio} from "./components/Portfolio/Portfolio";
-import {RemoteWork} from "./components/RemoteWork/RemoteWork";
+import {Freelance} from "./components/Freelance/Freelance";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 
@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Header/>
       <main>
-        <MainBanner/>
+        <Home/>
         <Skills/>
         <Portfolio/>
-        <RemoteWork/>
+        <Freelance/>
         <Contacts/>
       </main>
       <Footer/>

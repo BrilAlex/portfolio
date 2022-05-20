@@ -1,22 +1,32 @@
 .skill {
-    width: 250px;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: lightgray;
-    text-align: center;
+  width: 350px;
+  margin: 0 10px 20px;
+  padding: 30px 15px 40px 15px;
+  background: #f8f9fa;
+  text-align: center;
+  border: 1px dotted #e7e7e7;
+  border-radius: 4px;
+}
+
+.iconBox {
+  margin-bottom: 15px;
 }
 
 .icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: dimgrey;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: dimgrey;
 }
 
-.title {
-    margin: 10px 0;
+.skillContent h3 {
+  margin-top: 22px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.description {
-    font-style: italic;
+.skillContent p {
+  font-size: 15px;
+  line-height: 1.8em;
+  color: #797979;
 }
