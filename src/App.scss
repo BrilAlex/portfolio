@@ -1,3 +1,6 @@
+@import "common/styles/sass/variables";
+@import "common/styles/sass/mixins";
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -23,15 +26,12 @@
 
 /* App styles */
 .App {
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #212529;
+  @include textStyles($textFontFamily, 16px, 1.5);
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $headerFontFamily;
   font-weight: 500;
   line-height: 1.2;
 }

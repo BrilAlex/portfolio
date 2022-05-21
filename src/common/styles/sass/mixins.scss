@@ -1,0 +1,18 @@
+@import "./variables";
+
+@mixin textStyles($fontFamily, $fontSize, $lineHeight, $color: $textColor) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin buttonColor($bgColor, $borderColor) {
+  background-color: $bgColor;
+  border: 2px solid $borderColor;
+}
+
+@mixin buttonHoverColor($bgColor, $textColor) {
+  background-color: $bgColor;
+  color: $textColor;
+}

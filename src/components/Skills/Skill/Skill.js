@@ -1,4 +1,4 @@
-import styles from "./Skill.module.css";
+import styles from "./Skill.module.scss";
 
 export const Skill = (props) => {
   const {title, icon, description} = props;

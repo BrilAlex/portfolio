@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .navLink {
+    position: relative;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.4s;
+
+    &.active {
+      &:after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 2px;
+        left: 5%;
+        bottom: 0;
+        background: #bcbcbc;
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      padding: 15px 8px;
+    }
+  }
+}

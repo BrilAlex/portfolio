@@ -1,5 +1,5 @@
-import commonStyles from "../../common/styles/CommonStyles.module.css";
-import styles from "./Home.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.scss";
+import styles from "./Home.module.scss";
 import photo from "../../assets/images/photo.jpg";
 
 export const Home = () => {

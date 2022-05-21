@@ -1,4 +1,4 @@
-import commonStyles from "../../common/styles/CommonStyles.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.scss";
 import styles from "./Skills.module.css";
 import {Skill} from "./Skill/Skill";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";

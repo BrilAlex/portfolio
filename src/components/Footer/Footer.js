@@ -1,5 +1,5 @@
-import commonStyles from "../../common/styles/CommonStyles.module.css";
-import styles from "./Footer.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.scss";
+import styles from "./Footer.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={`${commonStyles.container} ${styles.container}`}>
         <div className={styles.socialContacts}>
-          <a className={styles.socialIcon} href={"#icon1"} title={"Icon 1"}>
+          <a className={styles.socialIcon} href={"https://github.com/BrilAlex"} title={"Icon 1"}>
             <FontAwesomeIcon icon={faGithub}/>
           </a>
           <a className={styles.socialIcon} href={"#icon2"} title={"Icon 1"}>

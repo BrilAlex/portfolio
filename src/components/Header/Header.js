@@ -1,4 +1,4 @@
-import commonStyles from "../../common/styles/CommonStyles.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.scss";
 import styles from "./Header.module.css";
 import {Navbar} from "./Navbar/Navbar";
 

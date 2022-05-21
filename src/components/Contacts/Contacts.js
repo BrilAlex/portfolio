@@ -1,4 +1,4 @@
-import commonStyles from "../../common/styles/CommonStyles.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.scss";
 import styles from "./Contacts.module.css";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
 import {ContactForm} from "../../common/components/ContactForm/ContactForm";

@@ -1,0 +1,50 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.project {
+  width: 350px;
+  margin: 0 10px 30px;
+  background: #fff;
+
+  .preViewImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .detailsLink {
+      @include textStyles($headerFontFamily, 18px, normal, #494949);
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.95);
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
+    }
+  }
+
+  .info {
+    padding: 25px;
+    border: 1px solid #ebebeb;
+    border-top: 0;
+
+    h4 {
+      @include textStyles($headerFontFamily, 22px, 1.5em, $primaryColor);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

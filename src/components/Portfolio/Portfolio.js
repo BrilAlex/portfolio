@@ -1,4 +1,4 @@
-import commonStyles from "../../common/styles/CommonStyles.module.css";
+import commonStyles from "../../common/styles/CommonStyles.module.scss";
 import styles from "./Portfolio.module.css";
 import {Project} from "./Project/Project";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
