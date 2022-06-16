@@ -1,16 +1,18 @@
-import commonStyles from "../../common/styles/CommonStyles.module.scss";
-import styles from "./Contacts.module.css";
+import s from "./Contacts.module.css";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
-import {ContactForm} from "../../common/components/ContactForm/ContactForm";
+import {ContactForm} from "./ContactForm/ContactForm";
+import Fade from "react-reveal/Fade";
 
 export const Contacts = () => {
   return (
-    <div className={commonStyles.section}>
-      <div className={`${commonStyles.container}`}>
+    <div id={"contacts"}>
+      <div className={"container"}>
         <SectionTitle title={"Contacts"}/>
-        <div className={styles.formContainer}>
-          <ContactForm/>
-        </div>
+        <Fade bottom>
+          <div className={s.formContainer}>
+            <ContactForm/>
+          </div>
+        </Fade>
       </div>
     </div>
   );

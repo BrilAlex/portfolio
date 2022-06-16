@@ -1,13 +1,12 @@
-import commonStyles from "../../common/styles/CommonStyles.module.scss";
-import styles from "./Header.module.css";
+import s from "./Header.module.scss";
 import {Navbar} from "./Navbar/Navbar";
 
 export const Header = () => {
   return (
-    <header className={styles.header}>
-      <nav className={`${commonStyles.container} ${styles.container}`}>
+    <header id={"header"} className={s.header}>
+      <div className={s.container}>
         <Navbar/>
-      </nav>
+      </div>
     </header>
   );
 };

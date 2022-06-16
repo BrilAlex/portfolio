@@ -1,6 +1,41 @@
+.menuToggle {
+  display: none;
+  padding: 19.5px 15px;
+  cursor: pointer;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 3px;
+    background: #fff;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
+
+  &.opened {
+    display: block;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 65px;
+    right: 0;
+    background: rgba(50, 50, 50, 0.95);
+  }
 
   .navLink {
     position: relative;
@@ -9,6 +44,7 @@
     font-weight: 600;
     color: #fff;
     transition: all 0.4s;
+    cursor: pointer;
 
     &.active {
       &:after {
@@ -22,8 +58,8 @@
       }
     }
 
-    @media screen and (max-width: 350px) {
-      padding: 15px 8px;
+    @media screen and (max-width: 500px) {
+      display: block;
     }
   }
 }

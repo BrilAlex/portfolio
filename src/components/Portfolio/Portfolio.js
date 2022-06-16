@@ -1,11 +1,11 @@
-import commonStyles from "../../common/styles/CommonStyles.module.scss";
-import styles from "./Portfolio.module.css";
+import s from "./Portfolio.module.css";
 import {Project} from "./Project/Project";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
 import todoListImage from "../../assets/images/todolist.jpg";
 import socialNetImage from "../../assets/images/social-net.jpg";
 import counter from "../../assets/images/counter.jpg";
 import studyCards from "../../assets/images/study-cards.jpg";
+import Fade from "react-reveal/Fade";
 
 export const Portfolio = () => {
   const projects = [
@@ -40,22 +40,24 @@ export const Portfolio = () => {
   ];
 
   return (
-    <div className={commonStyles.section}>
-      <div className={`${commonStyles.container}`}>
+    <div id={"portfolio"}>
+      <div className={"container"}>
         <SectionTitle title={"Portfolio"}/>
-        <div className={styles.projectsList}>
-          {
-            projects.map(p =>
-              <Project
-                key={p.id}
-                title={p.title}
-                preViewImage={p.preViewImage}
-                gitHubPagesURL={p.gitHubPagesURL}
-                description={p.description}
-              />
-            )
-          }
-        </div>
+        <Fade bottom>
+          <div className={s.projectsList}>
+            {
+              projects.map(p =>
+                <Project
+                  key={p.id}
+                  title={p.title}
+                  preViewImage={p.preViewImage}
+                  gitHubPagesURL={p.gitHubPagesURL}
+                  description={p.description}
+                />
+              )
+            }
+          </div>
+        </Fade>
       </div>
     </div>
   );

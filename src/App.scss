@@ -25,29 +25,75 @@
 }
 
 /* App styles */
-.App {
-  @include textStyles($textFontFamily, 16px, 1.5);
+html {
+  scroll-behavior: smooth;
+
+  .App {
+    @include textStyles($textFontFamily, 16px, 1.5);
+
+    main {
+      > div {
+        padding: 100px 0;
+
+        &:nth-child(even) {
+          background-color: $sectionBgColor;
+        }
+
+        &:nth-child(odd) {
+          background-color: $sectionBgSecondColor;
+        }
+      }
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .darkOverlay {
+      position: relative;
+      z-index: 0;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 15px;
+      font-family: $headerFontFamily;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+    }
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 15px;
-  font-family: $headerFontFamily;
-  font-weight: 500;
-  line-height: 1.2;
-}
 
-h1 {
-  font-size: 2.5rem;
-}
 
-h2 {
-  font-size: 2.25rem;
-}
 
-h4 {
-  font-size: 1.5rem;
-}
 
-h5 {
-  font-size: 1.25rem;
-}
+

@@ -1,19 +1,25 @@
-import commonStyles from "../../common/styles/CommonStyles.module.scss";
-import styles from "./Home.module.scss";
+import s from "./Home.module.scss";
 import photo from "../../assets/images/photo.jpg";
+import Fade from "react-reveal/Fade";
 
 export const Home = () => {
+  const sectionClassName = `${s.home} darkOverlay`;
+
   return (
-    <div className={`${styles.home} ${commonStyles.section} ${commonStyles.darkOverlay}`}>
-      <div className={`${commonStyles.container} ${styles.container}`}>
-        <div className={styles.greetingText}>
-          <h4>Hello & Welcome!</h4>
-          <h1>I am Alex Brilevski</h1>
-          <p>A front-end developer.</p>
-        </div>
-        <div className={styles.mainPhoto}>
-          <img src={photo} alt={"Alex Brilevski"}/>
-        </div>
+    <div id={"home"} className={sectionClassName}>
+      <div className={s.container}>
+        <Fade left>
+          <div className={s.greetingText}>
+            <p>Hello & Welcome!</p>
+            <h1>I am Alex Brilevski</h1>
+            <h4>A front-end developer.</h4>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className={s.mainPhoto}>
+            <img src={photo} alt={"Alex Brilevski"}/>
+          </div>
+        </Fade>
       </div>
     </div>
   );

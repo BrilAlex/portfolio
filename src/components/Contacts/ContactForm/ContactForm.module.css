@@ -4,14 +4,6 @@
   width: 300px;
 }
 
-.textField, .textArea {
-  margin-bottom: 15px;
-  padding: 10px;
-  background: #fff;
-  border: 1px solid rgba(255, 219, 0, 0.4);
-  border-radius: 3px;
-}
-
 .formField {
   display: block;
   height: 44px;

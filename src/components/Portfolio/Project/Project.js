@@ -1,4 +1,4 @@
-import styles from "./Project.module.scss";
+import s from "./Project.module.scss";
 
 export const Project = (props) => {
   const {title, preViewImage, gitHubPagesURL, description} = props;
@@ -8,13 +8,13 @@ export const Project = (props) => {
   };
 
   return (
-    <div className={styles.project}>
-      <div className={styles.preViewImage} style={preViewImageStyle}>
-        <a className={styles.detailsLink} href={gitHubPagesURL} title={"See project on GitHub Pages"}>
+    <div className={s.project}>
+      <div className={s.preViewImage} style={preViewImageStyle}>
+        <a className={s.detailsLink} href={gitHubPagesURL} title={"See project on GitHub Pages"}>
           See Details
         </a>
       </div>
-      <div className={styles.info}>
+      <div className={s.info}>
         <a href={"#1"}>
           <h4>{title}</h4>
         </a>

@@ -1,9 +1,12 @@
+@import "../../common/styles/sass/mixins";
+
 .home {
   background-image: url("../../assets/images/home-bg.jpg");
   background-position: center;
   background-size: cover;
 
   .container {
+    @include container();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -15,20 +18,32 @@
       text-align: center;
       color: #fff;
 
-      h4 {
-        font-size: 24px;
-        margin-bottom: 25px;
+      @media screen and (max-width: 570px) {
+        margin: 0;
       }
 
       h1 {
         margin: 10px 0 20px;
         font-size: 55px;
         font-weight: 700;
+
+        @media screen and (max-width: 570px) {
+          font-size: 30px;
+        }
+      }
+
+      h4 {
+        font-size: 24px;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 570px) {
+          font-size: 20px;
+        }
       }
 
       p {
         font-size: 24px;
-        text-transform: capitalize;
+        margin-bottom: 25px;
       }
     }
 

@@ -1,28 +1,33 @@
+@import "../../common/styles/sass/mixins";
+
 .footer {
-  padding: 70px 0;
+  padding: 100px 0;
   background: #212529;
   color: #fff;
 
   .container {
+    @include container();
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .socialContacts {
+      display: flex;
       margin-bottom: 20px;
 
       .socialIcon {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: 8px;
+        padding: 3px;
         width: 45px;
         height: 45px;
-        font-size: 27px;
-        line-height: 42px;
-        text-align: center;
         color: #fff;
         border: 2px solid #fff;
         border-radius: 50%;
         transition: all 0.5s;
+        overflow: hidden;
 
         &:last-child {
           margin-right: 0;
@@ -31,6 +36,15 @@
         &:hover {
           background-color: #fff;
           color: #000;
+        }
+
+        .icon {
+          height: 25px;
+        }
+
+        .iconWithBg {
+          height: 45px;
+          margin-left: 1px;
         }
       }
     }

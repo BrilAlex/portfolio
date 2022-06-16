@@ -1,0 +1,17 @@
+@import "../../common/styles/sass/mixins";
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 12px 0;
+  background: rgba(50, 50, 50, 0.95);
+  z-index: 1000;
+
+  .container {
+    @include container();
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

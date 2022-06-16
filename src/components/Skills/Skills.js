@@ -1,7 +1,7 @@
-import commonStyles from "../../common/styles/CommonStyles.module.scss";
-import styles from "./Skills.module.css";
+import s from "./Skills.module.css";
 import {Skill} from "./Skill/Skill";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
+import Fade from "react-reveal/Fade";
 
 export const Skills = () => {
   const skills = [
@@ -13,21 +13,23 @@ export const Skills = () => {
   ];
 
   return (
-    <div className={commonStyles.section}>
-      <div className={`${commonStyles.container}`}>
+    <div id={"skills"}>
+      <div className={"container"}>
         <SectionTitle title={"My Skills"} subtitle={"Some text"}/>
-        <div className={styles.skillsList}>
-          {
-            skills.map(s =>
-              <Skill
-                key={s.id}
-                title={s.title}
-                icon={s.icon}
-                description={s.description}
-              />
-            )
-          }
-        </div>
+        <Fade bottom>
+          <div className={s.skillsList}>
+            {
+              skills.map(s =>
+                <Skill
+                  key={s.id}
+                  title={s.title}
+                  icon={s.icon}
+                  description={s.description}
+                />
+              )
+            }
+          </div>
+        </Fade>
       </div>
     </div>
   );

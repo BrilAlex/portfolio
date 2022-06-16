@@ -1,5 +1,11 @@
 @import "./variables";
 
+@mixin container() {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 @mixin textStyles($fontFamily, $fontSize, $lineHeight, $color: $textColor) {
   font-family: $fontFamily;
   font-size: $fontSize;
