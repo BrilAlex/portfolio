@@ -46,7 +46,6 @@ export const ContactForm = () => {
     },
     validate,
     onSubmit: values => {
-      console.log(values);
       formAPI.sendMessage(values)
         .then(() => {
           setSendFormResult("Message successfully sent");
@@ -54,7 +53,6 @@ export const ContactForm = () => {
         })
         .catch((error) => {
           setSendFormResult("Sending failed");
-          console.log(error);
         });
     }
   });
