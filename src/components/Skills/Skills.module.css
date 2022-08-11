@@ -1,5 +1,11 @@
 .skillsList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .skillsList {
+    justify-content: center;
+  }
 }

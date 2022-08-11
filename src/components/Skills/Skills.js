@@ -5,11 +5,11 @@ import Fade from "react-reveal/Fade";
 
 export const Skills = () => {
   const skills = [
-    {id: 1, title: "HTML", icon: "html5", description: "HTML skill description"},
-    {id: 2, title: "CSS", icon: "css3", description: "CSS skill description"},
-    {id: 3, title: "JavaScript", icon: "js", description: "JavaScript skill description"},
-    {id: 4, title: "React", icon: "react", description: "React skill description"},
-    {id: 5, title: "Redux", icon: "redux", description: "Redux skill description"},
+    {id: 1, title: "HTML", icon: "html5", progress: 90},
+    {id: 2, title: "CSS", icon: "css3", progress: 85},
+    {id: 3, title: "JavaScript", icon: "js", progress: 75},
+    {id: 4, title: "React", icon: "react", progress: 70},
+    {id: 5, title: "Redux", icon: "redux", progress: 70},
   ];
 
   return (
@@ -24,7 +24,7 @@ export const Skills = () => {
                   key={s.id}
                   title={s.title}
                   icon={s.icon}
-                  description={s.description}
+                  progress={s.progress}
                 />
               )
             }

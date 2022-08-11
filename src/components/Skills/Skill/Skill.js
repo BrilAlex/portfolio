@@ -1,21 +1,25 @@
 import s from "./Skill.module.scss";
+import {Progress} from "./Progress/Progress";
 
 export const Skill = (props) => {
-  const {title, icon, description} = props;
+  const {title, icon, progress} = props;
 
   const iconStyle = `${s.icon}${icon ? " " + s[icon] : ""}`;
 
   return (
     <div className={s.skill}>
-      <div className={s.iconBox}>
-        <div className={iconStyle}/>
+      <div className={s.description}>
+        <div className={s.title}>
+          <div className={s.iconBox}>
+            <div className={iconStyle}/>
+          </div>
+          <h3>{title}</h3>
+        </div>
+        <div className={s.progress}>
+          {progress}%
+        </div>
       </div>
-      <div className={s.skillContent}>
-        <h3>{title}</h3>
-        <p className={s.description}>
-          {description}
-        </p>
-      </div>
+      <Progress progress={progress}/>
     </div>
   );
 };

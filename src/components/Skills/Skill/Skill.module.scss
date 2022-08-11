@@ -1,53 +1,67 @@
 .skill {
-  width: 350px;
-  margin: 0 10px 20px;
+  width: 48%;
+  margin-bottom: 20px;
   padding: 30px 15px 40px 15px;
   background: #f8f9fa;
   text-align: center;
   border: 1px dotted #e7e7e7;
   border-radius: 4px;
 
-  .iconBox {
-    margin-bottom: 15px;
-
-    .icon {
-      display: inline-block;
-      width: 76px;
-      height: 76px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .html5 {
-      background-image: url("../../../assets/icons/icon-html5.svg");
-    }
-
-    .css3 {
-      background-image: url("../../../assets/icons/icon-css3.svg");
-    }
-
-    .js {
-      background-image: url("../../../assets/icons/icon-js.svg");
-    }
-
-    .react {
-      background-image: url("../../../assets/icons/icon-react.svg");
-    }
-
-    .redux {
-      background-image: url("../../../assets/icons/icon-redux.svg");
-    }
+  @media screen and (max-width: 800px) {
+    width: 70%;
   }
 
-  .skillContent {
-    h3 {
-      margin-top: 22px;
-      font-size: 22px;
-      font-weight: 600;
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      .iconBox {
+        margin-right: 10px;
+
+        .icon {
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .html5 {
+          background-image: url("../../../assets/icons/icon-html5.svg");
+        }
+
+        .css3 {
+          background-image: url("../../../assets/icons/icon-css3.svg");
+        }
+
+        .js {
+          background-image: url("../../../assets/icons/icon-js.svg");
+        }
+
+        .react {
+          background-image: url("../../../assets/icons/icon-react.svg");
+        }
+
+        .redux {
+          background-image: url("../../../assets/icons/icon-redux.svg");
+        }
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
     }
 
-    .description {
+    .progress {
       font-size: 15px;
       line-height: 1.8em;
       color: #797979;
