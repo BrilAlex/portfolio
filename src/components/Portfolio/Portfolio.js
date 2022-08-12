@@ -13,29 +13,33 @@ export const Portfolio = () => {
       id: 1,
       title: "To-do list",
       preViewImage: todoListImage,
-      gitHubPagesURL: "",
-      description: "Project TodoList description"
+      gitHubSourceCode: "https://github.com/BrilAlex/todo-list",
+      gitHubPagesURL: "https://brilalex.github.io/todo-list",
+      description: "Stack: TypeScript, React, Redux, Redux Toolkit, Redux-Thunk, React-Router-dom, Axios, Formik, TDD, Material UI, Storybook."
     },
     {
       id: 2,
       title: "Social network",
       preViewImage: socialNetImage,
-      gitHubPagesURL: "",
-      description: "Project SocialNet description"
+      gitHubSourceCode: "https://github.com/BrilAlex/social-net",
+      gitHubPagesURL: "https://brilalex.github.io/social-net",
+      description: "Stack: TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Redux-Form, Reselect, TDD."
     },
     {
       id: 3,
       title: "Counter",
       preViewImage: counter,
-      gitHubPagesURL: "",
-      description: "Project Counter description"
+      gitHubSourceCode: "https://github.com/BrilAlex/counter",
+      gitHubPagesURL: "https://brilalex.github.io/counter",
+      description: "Stack: TypeScript, React, Redux, Redux-Thunk."
     },
     {
       id: 4,
-      title: "Friday project",
+      title: "Study cards",
       preViewImage: studyCards,
-      gitHubPagesURL: "",
-      description: "Project Study cards description"
+      gitHubSourceCode: "https://github.com/BrilAlex/study-cards",
+      gitHubPagesURL: "https://brilalex.github.io/study-cards",
+      description: "Stack: TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik. Team development."
     },
   ];
 
@@ -51,6 +55,7 @@ export const Portfolio = () => {
                   key={p.id}
                   title={p.title}
                   preViewImage={p.preViewImage}
+                  gitHubSourceCode={p.gitHubSourceCode}
                   gitHubPagesURL={p.gitHubPagesURL}
                   description={p.description}
                 />
