@@ -1,7 +1,7 @@
 import './App.scss';
 import {Header} from "./components/Header/Header";
 import {Home} from "./components/Home/Home";
-import {Skills} from "./components/Skills/Skills";
+import {AboutMe} from "./components/AboutMe/AboutMe";
 import {Portfolio} from "./components/Portfolio/Portfolio";
 import {Freelance} from "./components/Freelance/Freelance";
 import {Contacts} from "./components/Contacts/Contacts";
@@ -13,7 +13,7 @@ function App() {
       <Header/>
       <main>
         <Home/>
-        <Skills/>
+        <AboutMe/>
         <Portfolio/>
         <Freelance/>
         <Contacts/>
