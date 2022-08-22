@@ -91,7 +91,7 @@ export const ContactForm = () => {
         />
         {formik.touched.message && formik.errors.message && <div>{formik.errors.message}</div>}
       </div>
-      <Button text={"Send"}/>
+      <Button>Send</Button>
     </form>
   );
 };

@@ -1,6 +1,6 @@
 import s from "./Freelance.module.css";
-import {Button} from "../../common/components/Button/Button";
 import Fade from "react-reveal/Fade";
+import {LinkButton} from "../../common/components/LinkButton/LinkButton";
 
 export const Freelance = () => {
   const sectionClassName = `${s.freelance} darkOverlay`;
@@ -12,7 +12,9 @@ export const Freelance = () => {
           <div>
             <h2>I am opened for remote work proposals</h2>
           </div>
-          <Button text={"Hire Me!"} color={"secondary"} outlined={true}/>
+          <LinkButton url={"#contacts"} color={"secondary"} outlined={true}>
+            Hire Me!
+          </LinkButton>
         </Fade>
       </div>
     </div>

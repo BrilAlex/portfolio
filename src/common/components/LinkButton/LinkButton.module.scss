@@ -1,7 +1,7 @@
 @import "../../styles/sass/variables";
 @import "../../styles/sass/mixins";
 
-.button {
+.linkButton {
   @include button();
 
   &.primary {
