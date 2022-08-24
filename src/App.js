@@ -2,6 +2,7 @@ import './App.scss';
 import {Header} from "./components/Header/Header";
 import {Home} from "./components/Home/Home";
 import {AboutMe} from "./components/AboutMe/AboutMe";
+import {Resume} from "./components/Resume/Resume";
 import {Portfolio} from "./components/Portfolio/Portfolio";
 import {Freelance} from "./components/Freelance/Freelance";
 import {Contacts} from "./components/Contacts/Contacts";
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Home/>
         <AboutMe/>
+        <Resume/>
         <Portfolio/>
         <Freelance/>
         <Contacts/>

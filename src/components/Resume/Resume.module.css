@@ -1,0 +1,22 @@
+.resumeContent {
+  display: flex;
+}
+
+.resumeItem {
+  width: 50%;
+  padding: 20px;
+}
+
+.resumeFooter {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .resumeContent {
+    display: block;
+  }
+
+  .resumeItem {
+    width: 100%;
+  }
+}

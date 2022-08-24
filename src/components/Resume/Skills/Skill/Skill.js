@@ -8,18 +8,18 @@ export const Skill = (props) => {
 
   return (
     <div className={s.skill}>
+      <div className={s.iconBox}>
+        <div className={iconStyle}/>
+      </div>
       <div className={s.description}>
         <div className={s.title}>
-          <div className={s.iconBox}>
-            <div className={iconStyle}/>
+          <h4>{title}</h4>
+          <div className={s.progress}>
+            {progress}%
           </div>
-          <h3>{title}</h3>
         </div>
-        <div className={s.progress}>
-          {progress}%
-        </div>
+        <Progress progress={progress}/>
       </div>
-      <Progress progress={progress}/>
     </div>
   );
 };
