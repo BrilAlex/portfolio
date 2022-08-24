@@ -6,8 +6,7 @@ export const SectionTitle = (props) => {
     <Fade bottom>
       <div className={s.sectionTitle}>
         <h2>{props.title}</h2>
-        {props.subtitle && <p>{props.subtitle}</p>}
-        <span className={s.sBorder}/>
+        <span className={s.headingSeparator}/>
       </div>
     </Fade>
   );

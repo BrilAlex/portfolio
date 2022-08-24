@@ -1,0 +1,29 @@
+.aboutContent {
+  display: flex;
+}
+
+.aboutText, .aboutContacts {
+  margin-top: 48px;
+  padding: 0 12px;
+}
+
+.aboutText {
+  width: 70%;
+}
+
+.aboutContacts {
+  width: 30%;
+}
+
+.aboutContacts ul {
+  margin-bottom: 16px;
+}
+
+.aboutContacts ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #3c4043;
+}
+
+.aboutContacts ul li:last-child {
+  border-bottom: none;
+}
