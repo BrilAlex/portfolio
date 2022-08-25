@@ -44,9 +44,9 @@ export const Portfolio = () => {
   ];
 
   return (
-    <div id={"portfolio"}>
+    <section id={"portfolio"}>
       <div className={"container"}>
-        <SectionTitle title={"Portfolio"}/>
+        <SectionTitle title={"Portfolio"} subtitle={"My Projects"}/>
         <Fade bottom>
           <div className={s.projectsList}>
             {
@@ -64,6 +64,6 @@ export const Portfolio = () => {
           </div>
         </Fade>
       </div>
-    </div>
+    </section>
   );
 };

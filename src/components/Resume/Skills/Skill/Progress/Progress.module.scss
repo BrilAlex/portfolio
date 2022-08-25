@@ -1,0 +1,12 @@
+@import "../../../../../common/styles/sass/variables";
+
+.progress {
+  display: flex;
+  height: 0.5rem;
+  background-color: $darkBg;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+.progressBar {
+  background-color: $primaryColor;
+}

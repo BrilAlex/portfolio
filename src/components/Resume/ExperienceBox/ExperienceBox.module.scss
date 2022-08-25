@@ -1,25 +1,42 @@
+@import "../../../common/styles/sass/variables";
+
 .experienceBox {
-  margin: 24px 0;
-  padding: 20px;
-  border: 1px solid #e7e7e7;
-  border-radius: 7px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: $darkBg;
+  border-radius: 0.375rem;
 
   .period {
+    display: inline-block;
     margin-bottom: 10px;
-    font-weight: bold;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.375rem;
+    background-color: rgba(220, 53 ,69 ,1);
   }
 
   .details {
     text-align: left;
 
     h4 {
-      font-size: 18px;
+      font-size: 1.3rem;
+      color: $textWhite;
       text-transform: capitalize;
     }
 
+    .subtitle {
+      color: $primaryColor;
+    }
+
     .description {
+      margin-bottom: 0;
       line-height: 26px;
       font-size: 15px;
+      color: $textWhite50;
     }
   }
 }

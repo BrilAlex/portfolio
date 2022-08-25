@@ -1,3 +1,5 @@
+@import "../../../common/styles/sass/variables";
+
 .menuToggle {
   display: none;
   padding: 19.5px 15px;
@@ -32,34 +34,34 @@
     display: none;
     position: absolute;
     width: 150px;
-    top: 65px;
+    top: 56px;
     right: 0;
     background: rgba(50, 50, 50, 0.95);
   }
 
   .navLink {
     position: relative;
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 0.85rem;
     font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    transition: all 0.4s;
+    color: rgba(250, 250, 250, 0.9);
+    transition: all 0.2s ease;
     cursor: pointer;
 
     &.active {
+      color: $primaryColor;
+
       &:after {
         content: "";
         position: absolute;
         width: 90%;
         height: 2px;
         left: 5%;
-        bottom: 0;
-        background: #bcbcbc;
+        bottom: 9px;
+        background: $primaryColor;
       }
-    }
-
-    @media screen and (max-width: 500px) {
-      display: block;
     }
   }
 }

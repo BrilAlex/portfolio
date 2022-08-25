@@ -6,12 +6,12 @@ import {ExperienceBox} from "./ExperienceBox/ExperienceBox";
 
 export const Resume = () => {
   return (
-    <div id={"resume"}>
+    <section id={"resume"}>
       <div className={"container"}>
-        <SectionTitle title={"Education & Experience"}/>
+        <SectionTitle title={"Resume"} subtitle={"Education & Experience"}/>
         <div className={s.resumeContent}>
           <div className={s.resumeItem}>
-            <h3>Education</h3>
+            <h3>My Education</h3>
             <div>
               <ExperienceBox
                 startYear={2021}
@@ -28,7 +28,7 @@ export const Resume = () => {
             </div>
           </div>
           <div className={s.resumeItem}>
-            <h3>Experience</h3>
+            <h3>My Experience</h3>
             <div>
               <ExperienceBox
                 startYear={2021}
@@ -50,6 +50,6 @@ export const Resume = () => {
           <LinkButton>Download CV</LinkButton>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

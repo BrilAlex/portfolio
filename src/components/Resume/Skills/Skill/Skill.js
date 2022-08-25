@@ -12,12 +12,12 @@ export const Skill = (props) => {
         <div className={iconStyle}/>
       </div>
       <div className={s.description}>
-        <div className={s.title}>
-          <h4>{title}</h4>
-          <div className={s.progress}>
+        <p className={s.title}>
+          {title}
+          <span>
             {progress}%
-          </div>
-        </div>
+          </span>
+        </p>
         <Progress progress={progress}/>
       </div>
     </div>

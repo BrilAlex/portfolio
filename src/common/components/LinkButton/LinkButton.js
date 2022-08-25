@@ -1,9 +1,9 @@
-import s from "./LinkButton.module.scss";
+import s from "../../styles/sass/styles.module.scss";
 
 export const LinkButton = (
-  {url, color = "primary", outlined = false, children, ...props}
+  {url, color = "primary", variant = "default", children, ...props}
 ) => {
-  const finalClassName = `${s.linkButton} ${s[color]} ${outlined && s.outlined}`;
+  const finalClassName = `${s.button} ${s[color]} ${s[variant]}`;
 
   return (
     <a href={url} className={finalClassName} {...props}>{children}</a>

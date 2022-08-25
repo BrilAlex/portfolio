@@ -19,25 +19,60 @@ ul, ol {
 
 /* Fonts */
 @font-face {
-  font-family: 'Montserrat';
-  src: url('assets/fonts/Montserrat.ttf');
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Nunito';
-  src: url('assets/fonts/Nunito.ttf');
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* App styles */
 html {
   scroll-behavior: smooth;
 
-  .App {
-    @include textStyles($textFontFamily, 16px, 1.5);
+  body {
+    @include textStyles($textFontFamily, 1rem, 1.5, $textWhite);
+    background: #dddddd;
 
     main {
-      > div {
-        padding: 100px 0;
+      > section {
+        position: relative;
+        padding: 4.5rem 0;
+        overflow: hidden;
 
         &:nth-child(even) {
           background-color: $sectionBgColor;
@@ -52,7 +87,7 @@ html {
     .container {
       max-width: 1140px;
       margin: 0 auto;
-      padding: 0 10px;
+      padding: 0 12px;
     }
 
     .darkOverlay {
@@ -67,15 +102,17 @@ html {
         top: 0;
         left: 0;
         z-index: -1;
-        background: rgba(0, 0, 0, 0.7);
+        background-color: #111418;
+        opacity: 0.8;
       }
     }
 
     h1, h2, h3, h4, h5, h6 {
-      margin-bottom: 15px;
-      font-family: $headerFontFamily;
+      margin-bottom: 0.5rem;
+      font-family: $textFontFamily;
       font-weight: 500;
       line-height: 1.2;
+      color: $headingColor;
     }
 
     h1 {
@@ -96,6 +133,11 @@ html {
 
     h5 {
       font-size: 1.25rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.8;
     }
   }
 }

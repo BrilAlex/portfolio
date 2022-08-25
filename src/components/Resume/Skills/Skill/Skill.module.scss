@@ -1,13 +1,12 @@
+@import "../../../../common/styles/sass/variables";
+
 .skill {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 48%;
-  margin-bottom: 24px;
-  background: #f8f9fa;
+  margin-bottom: 1.5rem;
   text-align: center;
-  border: 1px dotted #e7e7e7;
-  border-radius: 4px;
 
   @media screen and (max-width: 767px) {
     width: 70%;
@@ -54,19 +53,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 8px;
-
-      h4 {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 500;
-      }
-    }
-
-    .progress {
-      font-size: 15px;
-      line-height: 1.8em;
-      color: #797979;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: $textLight;
     }
   }
 }

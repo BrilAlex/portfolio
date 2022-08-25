@@ -13,7 +13,9 @@ export const Skills = () => {
 
   return (
     <div id={"skills"}>
-      <div className={s.blockTitle}><h3>My Skills</h3></div>
+      <div className={s.blockTitle}>
+        <h3>My Skills</h3>
+      </div>
       <Fade bottom>
         <div className={s.skillsList}>
           {

@@ -11,44 +11,6 @@
     flex-direction: column;
     align-items: center;
 
-    .socialContacts {
-      display: flex;
-      margin-bottom: 20px;
-
-      .socialIcon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 8px;
-        padding: 3px;
-        width: 45px;
-        height: 45px;
-        color: #fff;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        transition: all 0.5s;
-        overflow: hidden;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        &:hover {
-          background-color: #fff;
-          color: #000;
-        }
-
-        .icon {
-          height: 25px;
-        }
-
-        .iconWithBg {
-          height: 45px;
-          margin-left: 1px;
-        }
-      }
-    }
-
     .copyright {
       text-align: center;
       line-height: 43px;

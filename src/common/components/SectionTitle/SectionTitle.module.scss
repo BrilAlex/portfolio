@@ -2,20 +2,37 @@
 
 .sectionTitle {
   position: relative;
-  margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 3rem;
   text-align: center;
 
   h2 {
-    margin-bottom: 15px;
-    font-size: 35px;
+    width: 100%;
+    margin: 0;
+    font-size: 8.25rem;
     font-weight: 600;
-    color: $primaryColor;
+    color: #6c757d;
+    line-height: 1.3;
+    text-transform: uppercase;
+    opacity: 0.1;
   }
 
-  .headingSeparator {
-    display: inline-block;
-    width: 80px;
-    height: 3px;
-    background: $secondaryColor;
+  .subtitle {
+    position: absolute;
+    align-self: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: $textWhite;
+    line-height: 1.5;
+    text-transform: capitalize;
+
+    .headingSeparator {
+      display: block;
+      width: 80px;
+      height: 3px;
+      margin: 0 auto;
+      background: $primaryColor;
+    }
   }
 }

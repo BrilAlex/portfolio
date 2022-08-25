@@ -1,4 +1,4 @@
-import s from "./Progress.module.css";
+import s from "./Progress.module.scss";
 
 export const Progress = ({progress}) => {
   const progressLineStyle = {width: `${progress}%`};

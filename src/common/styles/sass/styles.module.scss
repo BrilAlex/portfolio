@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./mixins";
+
+.button {
+  @include button();
+
+  &.primary {
+    @include buttonColor($primaryColor, $textWhite, $primaryColor);
+  }
+
+  &.outlined {
+    @include buttonColor(transparent, $textWhite, $primaryColor);
+
+    &:hover {
+      @include buttonHoverColor($primaryColor, $textWhite, $primaryColor);
+    }
+  }
+
+  &:hover {
+    @include buttonHoverColor($buttonHoverColor, $textWhite, $buttonHoverColor);
+  }
+}

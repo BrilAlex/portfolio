@@ -1,6 +1,12 @@
 .blockTitle {
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 1.5rem 0;
+}
+
+.blockTitle h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .skillsList {

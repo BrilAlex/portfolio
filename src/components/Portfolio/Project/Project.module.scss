@@ -4,7 +4,6 @@
 .project {
   width: 350px;
   margin: 0 10px 30px;
-  background: #fff;
 
   .preViewImage {
     display: flex;
@@ -17,7 +16,7 @@
     border-top-right-radius: 5px;
 
     .detailsLink {
-      @include textStyles($headerFontFamily, 18px, normal, #494949);
+      @include textStyles($textFontFamily, 18px, normal, #494949);
       padding: 8px;
       background: rgba(255, 255, 255, 0.95);
       font-weight: 700;
@@ -27,7 +26,7 @@
       cursor: pointer;
 
       &:hover {
-        background: #000;
+        background: $darkBg;
         color: #fff;
       }
     }
@@ -35,17 +34,17 @@
 
   .info {
     padding: 25px;
-    border: 1px solid #ebebeb;
+    background: $darkBg;
     border-top: 0;
 
     h4 {
-      @include textStyles($headerFontFamily, 22px, 1.5em, $primaryColor);
+      @include textStyles($textFontFamily, 22px, 1.5em, $primaryColor);
       margin-bottom: 10px;
       font-weight: 600;
     }
 
     p {
-      margin-bottom: 10px;
+      color: $textWhite50;
     }
   }
 }

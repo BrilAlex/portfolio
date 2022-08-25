@@ -1,9 +1,9 @@
-import s from "./Button.module.scss";
+import s from "../../styles/sass/styles.module.scss";
 
 export const Button = (
-  {onClick, color = "primary", outlined = false, children, ...props}
+  {onClick, color = "primary", variant = "default", children, ...props}
 ) => {
-  const finalClassName = `${s.button} ${s[color]} ${outlined && s.outlined}`;
+  const finalClassName = `${s.button} ${s[color]} ${s[variant]}`;
 
   return (
     <button
