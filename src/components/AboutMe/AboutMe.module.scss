@@ -2,11 +2,23 @@
 
 .aboutContent {
   display: flex;
-  margin-top: 48px;
+  flex-wrap: wrap;
+  margin: -3rem -0.75rem 0 -0.75rem;
 }
 
 .aboutText {
-  width: 760px;
+  width: 66.67%;
+  margin-top: 3rem;
+  padding: 0 0.75rem;
+
+  @media screen and (max-width: 1199px) {
+    width: 58.33%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    text-align: center;
+  }
 
   h3 {
     margin-bottom: 1rem;
@@ -25,8 +37,17 @@
 }
 
 .aboutContacts {
-  width: 380px;
-  padding-left: 24px;
+  width: 33.33%;
+  margin-top: 3rem;
+  padding: 0 0.75rem;
+
+  @media screen and (max-width: 1199px) {
+    width: 41.67%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
 
   ul {
     margin-bottom: 16px;

@@ -8,6 +8,10 @@
   width: 50%;
   margin-top: 1.5rem;
   padding: 0 0.75rem;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
 }
 
 .formGroup:nth-child(4) {

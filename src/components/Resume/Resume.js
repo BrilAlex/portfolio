@@ -33,12 +33,12 @@ export const Resume = () => {
               <ExperienceBox
                 startYear={2021}
                 finishYear={"Present"}
-                title={"Front-end developer, Part-time projects"}
-                description={"Study Cards (Start-up project), Social Network (Self-education project), To-Do List (Educational project)"}
+                title={"Front-end developer"}
+                description={"Part-time"}
               />
               <ExperienceBox
                 startYear={2010}
-                finishYear={"Present"}
+                finishYear={2021}
                 title={"Marketing specialist"}
                 description={""}
               />

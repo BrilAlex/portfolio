@@ -5,6 +5,10 @@
   width: 350px;
   margin: 0 10px 30px;
 
+  @media screen and (max-width: 991px) {
+    width: 328px;
+  }
+
   .preViewImage {
     display: flex;
     justify-content: center;

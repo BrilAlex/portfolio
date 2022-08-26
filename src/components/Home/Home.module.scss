@@ -22,7 +22,7 @@
       margin: 0 12px;
       text-align: center;
 
-      @media screen and (max-width: 570px) {
+      @media screen and (max-width: 991px) {
         margin: 0;
       }
 
@@ -32,8 +32,8 @@
         font-weight: 600;
         color: $textWhite;
 
-        @media screen and (max-width: 570px) {
-          font-size: 30px;
+        @media screen and (max-width: 1199px) {
+          font-size: calc(1.525rem + 3.3vw);
         }
       }
 
@@ -42,10 +42,6 @@
         font-size: 1.3rem;
         text-transform: capitalize;
         color: $textLight;
-
-        @media screen and (max-width: 570px) {
-          font-size: 20px;
-        }
       }
 
       p {
@@ -69,19 +65,22 @@
         border-radius: 50%;
       }
 
-      @media screen and (max-width: 858px) {
+      @media screen and (max-width: 991px) {
         margin-bottom: 40px;
       }
     }
 
-    @media screen and (max-width: 858px) {
+    @media screen and (max-width: 991px) {
       flex-direction: column-reverse;
       justify-content: center;
     }
   }
 
   .scrollDown {
-    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
     font-size: 20px;
     text-align: center;
     color: #fff;

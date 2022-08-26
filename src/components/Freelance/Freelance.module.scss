@@ -1,13 +1,23 @@
 @import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .freelance {
     background-image: url("../../assets/images/freelance-bg.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-}
 
-.freelance h2 {
-    margin-bottom: 24px;
-    color: $textWhite;
+    .container {
+        @include container();
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        h2 {
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: $textWhite;
+        }
+    }
 }

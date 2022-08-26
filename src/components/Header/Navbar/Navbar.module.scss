@@ -5,7 +5,7 @@
   padding: 19.5px 15px;
   cursor: pointer;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 991px) {
     display: block;
   }
 
@@ -30,7 +30,7 @@
     display: block;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 991px) {
     display: none;
     position: absolute;
     width: 150px;

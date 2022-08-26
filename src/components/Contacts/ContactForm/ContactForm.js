@@ -1,4 +1,4 @@
-import s from "./ContactForm.module.css";
+import s from "./ContactForm.module.scss";
 import {Button} from "../../../common/components/Button/Button";
 import {useFormik} from "formik";
 import {formAPI} from "../../../api/formApi";

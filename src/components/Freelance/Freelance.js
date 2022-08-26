@@ -7,7 +7,7 @@ export const Freelance = () => {
 
   return (
     <section id={"freelance"} className={sectionClassName}>
-      <div className={"container"}>
+      <div className={s.container}>
         <Fade bottom>
           <div>
             <h2>I am opened for remote work proposals</h2>
