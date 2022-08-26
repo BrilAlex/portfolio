@@ -1,30 +1,47 @@
 .form {
   display: flex;
-  flex-direction: column;
-  width: 300px;
+  flex-wrap: wrap;
+  margin: -1.5rem -0.75rem 0 -0.75rem;
 }
 
 .formGroup {
-  margin: 8px 0 16px;
+  width: 50%;
+  margin-top: 1.5rem;
+  padding: 0 0.75rem;
+}
+
+.formGroup:nth-child(4) {
+  width: 100%;
 }
 
 .formField {
   display: block;
   width: 100%;
-  height: 44px;
-  padding: 6px 12px;
-  font: 400 16px "Nunito", sans-serif;
+  height: inherit;
+  padding: 0.810rem 0.96rem;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  transition: border-color 0.15s ease-in-out;
+  color: #fff;
+  background-color: #232a31;
+  border: 1px solid #232a31;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;;
 }
 
 .formField:focus {
-  border-color: #000;
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+  outline: 0;
 }
 
 textarea.formField {
-  height: auto;
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+.formFooter {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
 }

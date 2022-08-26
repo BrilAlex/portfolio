@@ -86,12 +86,14 @@ export const ContactForm = () => {
       <div className={s.formGroup}>
         <textarea
           className={s.formField}
-          placeholder={"Your message"}
+          placeholder={"Tell me more about your needs..."}
           {...formik.getFieldProps("message")}
         />
         {formik.touched.message && formik.errors.message && <div>{formik.errors.message}</div>}
       </div>
-      <Button>Send</Button>
+      <div className={s.formFooter}>
+        <Button>Send message</Button>
+      </div>
     </form>
   );
 };

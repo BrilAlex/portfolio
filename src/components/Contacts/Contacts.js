@@ -4,6 +4,7 @@ import {ContactForm} from "./ContactForm/ContactForm";
 import Fade from "react-reveal/Fade";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn, faTelegram} from "@fortawesome/free-brands-svg-icons";
+import {faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export const Contacts = () => {
   return (
@@ -14,24 +15,45 @@ export const Contacts = () => {
           <div className={s.contactsContent}>
             <div className={s.contactsList}>
               <h4>Contacts</h4>
-              <ul>
-                <li>+375 29 617-20-37</li>
-                <li>brilevski.alex@gmail.com</li>
-              </ul>
+              <p>
+                <span className={s.icon}>
+                  <FontAwesomeIcon icon={faPhone}/>
+                </span>
+                +375 29 617-20-37
+              </p>
+              <p>
+                <span className={s.icon}>
+                  <FontAwesomeIcon icon={faEnvelope}/>
+                </span>
+                brilevski.alex@gmail.com
+              </p>
               <h4>Follow me</h4>
               <div className={s.socialContacts}>
-                <a className={s.socialIcon} href={"https://t.me/AlexBrilevski"} title={"My Telegram"}>
-                  <FontAwesomeIcon icon={faTelegram} className={s.iconWithBg}/>
+                <a
+                  className={`${s.socialIcon} ${s.muted}`}
+                  href={"https://t.me/AlexBrilevski"}
+                  title={"My Telegram"}
+                >
+                  <FontAwesomeIcon icon={faTelegram} className={s.icon}/>
                 </a>
-                <a className={s.socialIcon} href={"https://github.com/BrilAlex"} title={"My profile on GitHub"}>
-                  <FontAwesomeIcon icon={faGithub} className={s.iconWithBg}/>
+                <a
+                  className={`${s.socialIcon} ${s.muted}`}
+                  href={"https://github.com/BrilAlex"}
+                  title={"My profile on GitHub"}
+                >
+                  <FontAwesomeIcon icon={faGithub} className={s.icon}/>
                 </a>
-                <a className={s.socialIcon} href={"https://www.linkedin.com/in/alexei-brilevski"} title={"My Linkedin profile"}>
+                <a
+                  className={`${s.socialIcon} ${s.muted}`}
+                  href={"https://www.linkedin.com/in/alexei-brilevski"}
+                  title={"My Linkedin profile"}
+                >
                   <FontAwesomeIcon icon={faLinkedinIn} className={s.icon}/>
                 </a>
               </div>
             </div>
             <div className={s.formContainer}>
+              <h4>Send me a note</h4>
               <ContactForm/>
             </div>
           </div>

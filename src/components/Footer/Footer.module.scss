@@ -1,19 +1,16 @@
 @import "../../common/styles/sass/mixins";
 
 .footer {
-  padding: 100px 0;
+  padding: 4.125rem 0;
   background: #212529;
-  color: #fff;
+  color: rgba(250, 250, 250, 0.8);
 
   .container {
     @include container();
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .copyright {
+      margin-bottom: 0;
       text-align: center;
-      line-height: 43px;
     }
   }
 }

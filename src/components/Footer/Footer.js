@@ -6,9 +6,9 @@ export const Footer = () => {
   return (
     <footer id={"footer"} className={s.footer}>
       <div className={s.container}>
-        <div className={s.copyright}>
-          {year} &copy; Alex Brilevski. All rights reserved
-        </div>
+        <p className={s.copyright}>
+          &copy; {year} Alex Brilevski. All rights reserved
+        </p>
       </div>
     </footer>
   );
