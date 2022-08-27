@@ -12,34 +12,42 @@ export const Portfolio = () => {
     {
       id: 1,
       title: "To-do list",
-      preViewImage: todoListImage,
-      gitHubSourceCode: "https://github.com/BrilAlex/todo-list",
+      previewImage: todoListImage,
+      sourceCodeURL: "https://github.com/BrilAlex/todo-list",
       gitHubPagesURL: "https://brilalex.github.io/todo-list",
-      description: "Stack: TypeScript, React, Redux, Redux Toolkit, Redux-Thunk, React-Router-dom, Axios, Formik, TDD, Material UI, Storybook."
+      stack: "TypeScript, React, Redux, Redux Toolkit, Redux-Thunk, React-Router-dom, Axios, Formik, TDD, Material UI, Storybook.",
+      description: "Educational project",
+      period: "Feb. 2022 - Mar. 2022",
     },
     {
       id: 2,
       title: "Social network",
-      preViewImage: socialNetImage,
-      gitHubSourceCode: "https://github.com/BrilAlex/social-net",
+      previewImage: socialNetImage,
+      sourceCodeURL: "https://github.com/BrilAlex/social-net",
       gitHubPagesURL: "https://brilalex.github.io/social-net",
-      description: "Stack: TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Redux-Form, Reselect, TDD."
+      stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Redux-Form, Reselect, TDD.",
+      description: "Self-education project",
+      period: "Mar. 2022 - May 2022",
     },
     {
       id: 3,
       title: "Counter",
-      preViewImage: counter,
-      gitHubSourceCode: "https://github.com/BrilAlex/counter",
+      previewImage: counter,
+      sourceCodeURL: "https://github.com/BrilAlex/counter",
       gitHubPagesURL: "https://brilalex.github.io/counter",
-      description: "Stack: TypeScript, React, Redux, Redux-Thunk."
+      stack: "TypeScript, React, Redux, Redux-Thunk.",
+      description: "Educational project",
+      period: "Mar.2022",
     },
     {
       id: 4,
       title: "Study cards",
-      preViewImage: studyCards,
-      gitHubSourceCode: "https://github.com/BrilAlex/study-cards",
+      previewImage: studyCards,
+      sourceCodeURL: "https://github.com/BrilAlex/study-cards",
       gitHubPagesURL: "https://brilalex.github.io/study-cards",
-      description: "Stack: TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik. Team development."
+      stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik. Team development.",
+      description: "Start-up project",
+      period: "Mat 2022 - July 2022",
     },
   ];
 
@@ -49,18 +57,7 @@ export const Portfolio = () => {
         <SectionTitle title={"Portfolio"} subtitle={"My Projects"}/>
         <Fade bottom>
           <div className={s.projectsList}>
-            {
-              projects.map(p =>
-                <Project
-                  key={p.id}
-                  title={p.title}
-                  preViewImage={p.preViewImage}
-                  gitHubSourceCode={p.gitHubSourceCode}
-                  gitHubPagesURL={p.gitHubPagesURL}
-                  description={p.description}
-                />
-              )
-            }
+            {projects.map(p => <Project key={p.id} project={p}/>)}
           </div>
         </Fade>
       </div>
