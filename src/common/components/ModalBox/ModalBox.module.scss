@@ -1,25 +1,78 @@
 @import "../../styles/sass/variables";
 
-.modalBox {
+.modalBg {
   position: fixed;
-  left: 0;
   top: 0;
-  max-width: 1170px;
-  padding: 30px;
-  background: #212529;
-  z-index: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0b0b;
+  opacity: 0.6;
+  z-index: 1042;
+  overflow: hidden;
+}
 
-  .buttonClose {
+.modalWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1043;
+  outline: 0;
+  overflow: hidden auto;
+
+  .modalContainer {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
-    width: 44px;
-    height: 44px;
-    font-style: normal;
-    font-size: 28px;
-    line-height: 44px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 8px;
+
+    .modalBox {
+      position: relative;
+      max-width: 1170px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #212529;
+
+      @media screen and (max-width: 1199px) {
+        max-width: 960px;
+      }
+
+      @media screen and (max-width: 991px) {
+        max-width: 720px;
+      }
+
+      @media screen and (max-width: 767px) {
+        max-width: 540px;
+      }
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
+
+      .buttonClose {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 44px;
+        height: 44px;
+        font-family: Arial, Baskerville, monospace;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 44px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        opacity: 0.65;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

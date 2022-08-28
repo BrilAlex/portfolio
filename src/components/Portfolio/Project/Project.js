@@ -1,6 +1,7 @@
 import s from "./Project.module.scss";
 import {useState} from "react";
 import {ModalBox} from "../../../common/components/ModalBox/ModalBox";
+import {createPortal} from "react-dom";
 
 export const Project = ({project}) => {
   const {
@@ -31,33 +32,50 @@ export const Project = ({project}) => {
         </div>
       </div>
 
-      <ModalBox isShown={isShown} setIsShown={setIsShown}>
-        <div className={s.modalProject}>
-          <h2>{title}</h2>
-          <div className={s.projectInfo}>
-            <div className={s.projectImage}>
-              <img src={previewImage} alt={title}/>
-            </div>
-            <div className={s.projectDescription}>
-              <h4>Project Details:</h4>
-              <ul>
-                <li><span>Technologies:</span> {stack}</li>
-                <li><span>Date:</span> {period}</li>
-                <li><span>URL:</span> <a href={gitHubPagesURL}>View on GitHub Pages</a></li>
-                <li><span>Source Code:</span> <a href={sourceCodeURL}>View on GitHub</a></li>
-              </ul>
-              {description &&
-                <>
-                  <h4>Project Info:</h4>
-                  <p>
-                    {description}
-                  </p>
-                </>
-              }
+      {createPortal(
+        <ModalBox isShown={isShown} setIsShown={setIsShown}>
+          <div className={s.modalProject}>
+            <h2>{title}</h2>
+            <div className={s.projectInfo}>
+              <div className={s.projectImage}>
+                <img src={previewImage} alt={title}/>
+              </div>
+              <div className={s.projectDescription}>
+                <h4>Project Info:</h4>
+                <p>{description}</p>
+                <h4>Project Details:</h4>
+                <ul>
+                  <li><span>Technologies:</span> {stack}</li>
+                  <li><span>Date:</span> {period}</li>
+                  <li>
+                    <span>URL:</span>
+                    <a
+                      href={gitHubPagesURL}
+                      title={"See project on GitHub Pages"}
+                      target={"_blank"}
+                      rel={"noreferrer"}
+                    >
+                      View on GitHub Pages
+                    </a>
+                  </li>
+                  <li>
+                    <span>Source Code:</span>
+                    <a
+                      href={sourceCodeURL}
+                      title={"See project code on GitHub"}
+                      target={"_blank"}
+                      rel={"noreferrer"}
+                    >
+                      View on GitHub
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </ModalBox>
+        </ModalBox>,
+        document.getElementById("root")
+      )}
     </>
   );
 };
