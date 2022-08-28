@@ -31,7 +31,10 @@ export const ContactForm = () => {
   const [sendFormResult, setSendFormResult] = useState(null);
 
   useEffect(() => {
-    const timeoutID = setTimeout(() => setSendFormResult(null), 2000);
+    const timeoutID = setTimeout(() => {
+      if (sendFormResult) setSendFormResult(null);
+    }, 3000);
+
     return () => {
       clearTimeout(timeoutID);
     };
@@ -58,42 +61,44 @@ export const ContactForm = () => {
   });
 
   return (
-    <form className={s.form} onSubmit={formik.handleSubmit}>
-      {sendFormResult && <div>{sendFormResult}</div>}
-      <div className={s.formGroup}>
-        <input
-          className={s.formField}
-          placeholder={"Your name"}
-          {...formik.getFieldProps("name")}
-        />
-        {formik.touched.name && formik.errors.name && <div>{formik.errors.name}</div>}
-      </div>
-      <div className={s.formGroup}>
-        <input
-          className={s.formField}
-          placeholder={"Your email"}
-          {...formik.getFieldProps("email")}
-        />
-        {formik.touched.email && formik.errors.email && <div>{formik.errors.email}</div>}
-      </div>
-      <div className={s.formGroup}>
-        <input
-          className={s.formField}
-          placeholder={"Your phone"}
-          {...formik.getFieldProps("phone")}
-        />
-      </div>
-      <div className={s.formGroup}>
+    <>
+      {sendFormResult && <div className={s.formResult}>{sendFormResult}</div>}
+      <form className={s.form} onSubmit={formik.handleSubmit}>
+        <div className={s.formGroup}>
+          <input
+            className={s.formField}
+            placeholder={"Your name"}
+            {...formik.getFieldProps("name")}
+          />
+          {formik.touched.name && formik.errors.name && <div>{formik.errors.name}</div>}
+        </div>
+        <div className={s.formGroup}>
+          <input
+            className={s.formField}
+            placeholder={"Your email"}
+            {...formik.getFieldProps("email")}
+          />
+          {formik.touched.email && formik.errors.email && <div>{formik.errors.email}</div>}
+        </div>
+        <div className={s.formGroup}>
+          <input
+            className={s.formField}
+            placeholder={"Your phone"}
+            {...formik.getFieldProps("phone")}
+          />
+        </div>
+        <div className={s.formGroup}>
         <textarea
           className={s.formField}
           placeholder={"Tell me more about your needs..."}
           {...formik.getFieldProps("message")}
         />
-        {formik.touched.message && formik.errors.message && <div>{formik.errors.message}</div>}
-      </div>
-      <div className={s.formFooter}>
-        <Button>Send message</Button>
-      </div>
-    </form>
+          {formik.touched.message && formik.errors.message && <div>{formik.errors.message}</div>}
+        </div>
+        <div className={s.formFooter}>
+          <Button>Send message</Button>
+        </div>
+      </form>
+    </>
   );
 };

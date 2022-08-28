@@ -41,6 +41,10 @@
       font-size: 1.125rem;
       color: $primaryColor;
     }
+
+    a {
+      color: $textLight;
+    }
   }
 
   p:last-of-type {

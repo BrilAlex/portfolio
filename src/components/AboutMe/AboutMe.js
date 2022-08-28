@@ -1,5 +1,6 @@
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
 import {LinkButton} from "../../common/components/LinkButton/LinkButton";
+import cvFileLink from "../../assets/files/CV_Alexei_Brilevski.pdf";
 import s from "./AboutMe.module.scss";
 
 export const AboutMe = () => {
@@ -26,12 +27,20 @@ export const AboutMe = () => {
           </div>
           <div className={s.aboutContacts}>
             <ul>
-              <li><b>Name:</b> Brilevski Alexei</li>
-              <li><b>Phone:</b> +375 29 617-20-37</li>
-              <li><b>Email:</b> brilevski.alex@gmail.com</li>
-              <li><b>From:</b> Minsk, Belarus</li>
+              <li>
+                <b>Name:</b> Brilevski Alexei
+              </li>
+              <li>
+                <b>Phone:</b> <a href={"tel:+375296172037"}>+375 29 617-20-37</a>
+              </li>
+              <li>
+                <b>Email:</b> <a href={"mailto:brilevski.alex@gmail.com"}>brilevski.alex@gmail.com</a>
+              </li>
+              <li>
+                <b>From:</b> Minsk, Belarus
+              </li>
             </ul>
-            <LinkButton>Download CV</LinkButton>
+            <LinkButton url={cvFileLink} target={"_blank"}>Download CV</LinkButton>
           </div>
         </div>
       </div>

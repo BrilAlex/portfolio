@@ -3,6 +3,7 @@ import {Skills} from "./Skills/Skills";
 import {LinkButton} from "../../common/components/LinkButton/LinkButton";
 import s from "./Resume.module.css";
 import {ExperienceBox} from "./ExperienceBox/ExperienceBox";
+import cvFileLink from "../../assets/files/CV_Alexei_Brilevski.pdf";
 
 export const Resume = () => {
   return (
@@ -47,7 +48,7 @@ export const Resume = () => {
         </div>
         <Skills/>
         <div className={s.resumeFooter}>
-          <LinkButton>Download CV</LinkButton>
+          <LinkButton url={cvFileLink} target={"_blank"}>Download CV</LinkButton>
         </div>
       </div>
     </section>

@@ -19,13 +19,13 @@ export const Contacts = () => {
                 <span className={s.icon}>
                   <FontAwesomeIcon icon={faPhone}/>
                 </span>
-                +375 29 617-20-37
+                <a href={"tel:+375296172037"}>+375 29 617-20-37</a>
               </p>
               <p>
                 <span className={s.icon}>
                   <FontAwesomeIcon icon={faEnvelope}/>
                 </span>
-                brilevski.alex@gmail.com
+                <a href={"mailto:brilevski.alex@gmail.com"}>brilevski.alex@gmail.com</a>
               </p>
               <h4>Follow me</h4>
               <div className={s.socialContacts}>
