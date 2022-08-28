@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dad52b07.css",
-    "main.js": "/portfolio/static/js/main.f8eb62f7.js",
+    "main.css": "/portfolio/static/css/main.dd515532.css",
+    "main.js": "/portfolio/static/js/main.5c8eecc4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.a8cdba19f91c463317c8.jpg",
     "static/media/freelance-bg.jpg": "/portfolio/static/media/freelance-bg.e90094325c48aae33a69.jpg",
@@ -11,6 +11,7 @@
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
     "static/media/Poppins-Black.ttf": "/portfolio/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/CV_Alexei_Brilevski.pdf": "/portfolio/static/media/CV_Alexei_Brilevski.a5a6d3210d7a7c2f6769.pdf",
     "static/media/photo.jpg": "/portfolio/static/media/photo.779f6b179c985a0477b6.jpg",
     "static/media/study-cards.jpg": "/portfolio/static/media/study-cards.e9478e04618d3a38009d.jpg",
     "static/media/todolist.jpg": "/portfolio/static/media/todolist.d0c47cdd0852e8a71dc6.jpg",
@@ -21,12 +22,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/icon-css3.svg": "/portfolio/static/media/icon-css3.4e47c3122b8d2476a02f.svg",
     "static/media/icon-html5.svg": "/portfolio/static/media/icon-html5.f318c8b1d5945fa9adc8.svg",
-    "main.dad52b07.css.map": "/portfolio/static/css/main.dad52b07.css.map",
-    "main.f8eb62f7.js.map": "/portfolio/static/js/main.f8eb62f7.js.map",
+    "main.dd515532.css.map": "/portfolio/static/css/main.dd515532.css.map",
+    "main.5c8eecc4.js.map": "/portfolio/static/js/main.5c8eecc4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dad52b07.css",
-    "static/js/main.f8eb62f7.js"
+    "static/css/main.dd515532.css",
+    "static/js/main.5c8eecc4.js"
   ]
 }
