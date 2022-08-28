@@ -11,6 +11,16 @@ export const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      title: "Study cards",
+      previewImage: studyCards,
+      sourceCodeURL: "https://github.com/BrilAlex/study-cards",
+      gitHubPagesURL: "https://brilalex.github.io/study-cards",
+      stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik. Team development.",
+      description: "Start-up project",
+      period: "Mat 2022 - July 2022",
+    },
+    {
+      id: 2,
       title: "To-do list",
       previewImage: todoListImage,
       sourceCodeURL: "https://github.com/BrilAlex/todo-list",
@@ -20,7 +30,7 @@ export const Portfolio = () => {
       period: "Feb. 2022 - Mar. 2022",
     },
     {
-      id: 2,
+      id: 3,
       title: "Social network",
       previewImage: socialNetImage,
       sourceCodeURL: "https://github.com/BrilAlex/social-net",
@@ -30,7 +40,7 @@ export const Portfolio = () => {
       period: "Mar. 2022 - May 2022",
     },
     {
-      id: 3,
+      id: 4,
       title: "Counter",
       previewImage: counter,
       sourceCodeURL: "https://github.com/BrilAlex/counter",
@@ -38,16 +48,6 @@ export const Portfolio = () => {
       stack: "TypeScript, React, Redux, Redux-Thunk.",
       description: "Educational project",
       period: "Mar.2022",
-    },
-    {
-      id: 4,
-      title: "Study cards",
-      previewImage: studyCards,
-      sourceCodeURL: "https://github.com/BrilAlex/study-cards",
-      gitHubPagesURL: "https://brilalex.github.io/study-cards",
-      stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik. Team development.",
-      description: "Start-up project",
-      period: "Mat 2022 - July 2022",
     },
   ];
 

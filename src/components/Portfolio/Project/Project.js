@@ -23,8 +23,8 @@ export const Project = ({project}) => {
   return (
     <>
       <div className={s.project} onClick={() => setIsShown(true)}>
-        <div className={s.previewImage} style={previewImageStyle}/>
         <div className={s.info}>
+          <div className={s.previewImage} style={previewImageStyle}/>
           <h4>{title}</h4>
         </div>
         <div className={s.overlay}>
