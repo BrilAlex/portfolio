@@ -1,10 +1,11 @@
 import s from "./Portfolio.module.css";
 import {Project} from "./Project/Project";
 import {SectionTitle} from "../../common/components/SectionTitle/SectionTitle";
-import todoListImage from "../../assets/images/todolist.jpg";
-import socialNetImage from "../../assets/images/social-net.jpg";
-import counter from "../../assets/images/counter.jpg";
-import studyCards from "../../assets/images/study-cards.jpg";
+import todoListImage from "../../assets/images/todolist.png";
+import socialNetImage from "../../assets/images/social-net.png";
+import counter from "../../assets/images/counter.png";
+import studyCards from "../../assets/images/study-cards.png";
+import chess from "../../assets/images/chess.png";
 import Fade from "react-reveal/Fade";
 
 export const Portfolio = () => {
@@ -17,7 +18,7 @@ export const Portfolio = () => {
       gitHubPagesURL: "https://brilalex.github.io/study-cards",
       stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik. Team development.",
       description: "Start-up project",
-      period: "Mat 2022 - July 2022",
+      period: "Mar. 2022 - July 2022",
     },
     {
       id: 2,
@@ -47,7 +48,17 @@ export const Portfolio = () => {
       gitHubPagesURL: "https://brilalex.github.io/counter",
       stack: "TypeScript, React, Redux, Redux-Thunk.",
       description: "Educational project",
-      period: "Mar.2022",
+      period: "Mar. 2022",
+    },
+    {
+      id: 5,
+      title: "Chess",
+      previewImage: chess,
+      sourceCodeURL: "https://github.com/BrilAlex/react-chess",
+      gitHubPagesURL: "https://brilalex.github.io/react-chess",
+      stack: "TypeScript, React",
+      description: "Pet project",
+      period: "Sep. 2022",
     },
   ];
 
