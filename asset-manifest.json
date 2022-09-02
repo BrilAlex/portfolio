@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dd515532.css",
-    "main.js": "/portfolio/static/js/main.5c8eecc4.js",
+    "main.js": "/portfolio/static/js/main.3ecea157.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/social-net.png": "/portfolio/static/media/social-net.d11bd14cea9c2d66e42c.png",
     "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.a8cdba19f91c463317c8.jpg",
     "static/media/freelance-bg.jpg": "/portfolio/static/media/freelance-bg.e90094325c48aae33a69.jpg",
+    "static/media/study-cards.png": "/portfolio/static/media/study-cards.d7ce093a05382bdf2909.png",
     "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "static/media/Poppins-SemiBold.ttf": "/portfolio/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
     "static/media/Poppins-Black.ttf": "/portfolio/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/photo.jpg": "/portfolio/static/media/photo.7b26c675cb7714a9476e.jpg",
     "static/media/CV_Alexei_Brilevski.pdf": "/portfolio/static/media/CV_Alexei_Brilevski.a5a6d3210d7a7c2f6769.pdf",
-    "static/media/photo.jpg": "/portfolio/static/media/photo.779f6b179c985a0477b6.jpg",
-    "static/media/study-cards.jpg": "/portfolio/static/media/study-cards.e9478e04618d3a38009d.jpg",
-    "static/media/todolist.jpg": "/portfolio/static/media/todolist.d0c47cdd0852e8a71dc6.jpg",
-    "static/media/counter.jpg": "/portfolio/static/media/counter.76988d9aacab0db2ea27.jpg",
+    "static/media/chess.png": "/portfolio/static/media/chess.973d99432385cb10f2ec.png",
+    "static/media/todolist.png": "/portfolio/static/media/todolist.233039196d1d9f11ded4.png",
+    "static/media/counter.png": "/portfolio/static/media/counter.9871fd786ffc37f96c51.png",
     "static/media/icon-react.svg": "/portfolio/static/media/icon-react.e68b35f4774979ae220b.svg",
     "static/media/icon-redux.svg": "/portfolio/static/media/icon-redux.0e4fb1c819ac4c060c92.svg",
     "static/media/icon-js.svg": "/portfolio/static/media/icon-js.00f3e5cf8bcf4ae623b3.svg",
@@ -23,11 +25,11 @@
     "static/media/icon-css3.svg": "/portfolio/static/media/icon-css3.4e47c3122b8d2476a02f.svg",
     "static/media/icon-html5.svg": "/portfolio/static/media/icon-html5.f318c8b1d5945fa9adc8.svg",
     "main.dd515532.css.map": "/portfolio/static/css/main.dd515532.css.map",
-    "main.5c8eecc4.js.map": "/portfolio/static/js/main.5c8eecc4.js.map",
+    "main.3ecea157.js.map": "/portfolio/static/js/main.3ecea157.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd515532.css",
-    "static/js/main.5c8eecc4.js"
+    "static/js/main.3ecea157.js"
   ]
 }
